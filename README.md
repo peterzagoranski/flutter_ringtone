@@ -1,10 +1,18 @@
-# ringtone
+# Ringtone
+[![pub package](https://img.shields.io/pub/v/ringtone.svg)](https://pub.dartlang.org/packages/ringtone)
 
-A new flutter plugin project.
+A Flutter plugin to play/stop a ringtone.
 
-## Getting Started
+## Usage
+To use this plugin, add `ringtone` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+## Usage
+``` dart
+// Import package
+import 'package:ringtone/ringtone.dart';
+```
 
-For help on editing plugin code, view the [documentation](https://flutter.io/developing-packages/#edit-plugin-package).
+``` dart
+Ringtone.play();
+Ringtone.stop();
+```
