@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-
-import 'package:flutter/services.dart';
 import 'package:ringtone/ringtone.dart';
 
 void main() => runApp(new MyApp());
@@ -17,11 +14,25 @@ class _MyAppState extends State<MyApp> {
     return new MaterialApp(
       home: new Scaffold(
         appBar: new AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Plugin ringtone app'),
         ),
         body: new Center(
-          child: new Text('Running on: Unknown'),
+          child: new Text('Ringtone'),
         ),
+        persistentFooterButtons: <Widget>[
+          new FlatButton(
+            onPressed: () {
+              Ringtone.stop();
+            },
+            child: const Text('Stop')
+          ),
+          new FlatButton(
+            onPressed: () {
+              Ringtone.play();
+            },
+            child: const Text('Play')
+          ),
+        ],
       ),
     );
   }
