@@ -1,0 +1,19 @@
+name: ringtone
+description: Ringtone plugin.
+version: 0.0.1
+authors:
+- Peter Zagoranski <peter.zagoranski@gmail.com>
+homepage: https://github.com/peterzagoranski/flutter_ringtone
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: com.github.peterzagoranski.flutter.ringtone
+    pluginClass: RingtonePlugin
+
